@@ -1,0 +1,16 @@
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+
+@font-face { font-family: Triforce; src: url('../fonts/Triforce.ttf'); }
+@font-face { font-family: Charlemagne; src: url('../fonts/CharlemagneRegular.ttf'); }
+@font-face { font-family: ReturnOfGanon; src: url('../fonts/ReturnOfGanon.ttf'); }

@@ -1,0 +1,54 @@
+<section data-ng-controller="HomeController">
+  
+<style>
+    #largeBackground {background: url(modules/core/img/brand/sky-and-water.jpg) no-repeat center center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+    }
+
+    @media screen and (min-width: 800px) {
+        #largeBackground {background: url(modules/core/img/brand/house-of-stairs.jpg) no-repeat center center;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+        }
+    }
+    @media screen and (min-width: 1800px) {
+        #largeBackground {background: url(modules/core/img/brand/metamorphosis.jpg) no-repeat center center;
+                background-size: cover;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+        }
+    }
+</style>
+    
+<div id="coverImageBacker"></div>
+<div id="largeBackground">
+</div>
+<div id="menu">
+<ul>
+<li class="leftTxt"><a href="../index" id="selectedMenuItemHover">PARTIAL CINEMA</a></li>
+<li class="centerTxt"><a href="../projects">SHOWS</a></li>
+<li class="rightTxt"><a href="../about">ABOUT</a></li>
+</ul>
+
+</div>
+<div id="wrapper">
+<div id="contentWrapper" class="fullWidth coverImage">
+<ul class="homeGrid gridLayout">
+<li data-ng-repeat="song in songs">
+    <a ng-href="{{song.url}}">
+        <img ng-src="{{song.imgSrc}}" class="thumbnail">
+        <div class="blackOverlay homeOverlay">
+          <span>{{song.title}}<br/><br/>{{song.lead}}</span>
+        </div>
+    </a>
+</li>
+</ul>
+</div>
+</div>
+</section>
